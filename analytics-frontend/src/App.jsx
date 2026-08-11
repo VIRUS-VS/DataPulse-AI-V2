@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer } from 'recharts';
 
 // Use localhost for V2 local testing with the upgraded backend
-const API_BASE_URL = 'http://localhost:8000'; 
+const API_BASE_URL = 'https://datapulse-v2-backend.onrender.com'; 
 
 export default function App() {
   const [prompt, setPrompt] = useState('');
