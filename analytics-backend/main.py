@@ -131,3 +131,8 @@ async def execute_sql(request: SQLExecutionRequest):
         raise HTTPException(status_code=400, detail=f"SQL Execution Error: {str(e)}")
     finally:
         db.close()
+
+# 4. Keep-Alive Ping Endpoint
+@app.get("/api/ping")
+async def ping():
+    return {"status": "awake", "message": "Server is running smoothly."}
